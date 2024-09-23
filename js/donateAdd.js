@@ -75,5 +75,5 @@ document.getElementById('addBtn').addEventListener('click',function(){
 // blog section
 
 document.getElementById('blog-btn').addEventListener('click',function(){
-    window.location.href = '../blog.html';
+    window.location.href=`blog.html`;
 })
