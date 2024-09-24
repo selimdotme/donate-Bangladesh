@@ -4,7 +4,7 @@ document.getElementById('noakhaliAddBtn').addEventListener('click',function(){
     const countMoney = getId('count');
     const text = document.getElementById('textN').innerText;
     const footer = document.getElementById('footer');
-    if(inputValue >=0 && inputValue !== isNaN(inputValue)){
+    if(inputValue >0 && inputValue !== isNaN(inputValue)){
     
     const tatalDonate = inputValue + noakhaliMoney;
     const totalMoney = document.getElementById('noakhaliDonate').innerText = tatalDonate;
@@ -35,7 +35,7 @@ document.getElementById('feniDonateBtn').addEventListener('click',function(){
     const countMoney = getId('count');
     const text = document.getElementById('textF').innerText;
     const footer = document.getElementById('footer');
-    if(feniInputValue >=0 && feniInputValue !== isNaN(feniInputValue)){
+    if(feniInputValue >0 && feniInputValue !== isNaN(feniInputValue)){
         const feniTotalDonate = feniInputValue + feniMoney;
     const totalMoney = document.getElementById('feniMoney').innerText = feniTotalDonate;
     const needDonateMoney = countMoney - feniInputValue;
@@ -62,7 +62,7 @@ document.getElementById('addBtn').addEventListener('click',function(){
     const countMoney = getId('count');
     const text = document.getElementById('text').innerText;
     const footer = document.getElementById('footer');
-    if(inputValue >=0 && inputValue !== isNaN(inputValue)){
+    if(inputValue >0 && inputValue !== isNaN(inputValue)){
     const totalDonateMoney = inputValue + money;
     const totalMoney = document.getElementById('money').innerText = totalDonateMoney;
     const needDonateMoney = countMoney - inputValue;
