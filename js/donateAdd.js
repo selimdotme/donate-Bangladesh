@@ -3,6 +3,7 @@ document.getElementById('noakhaliAddBtn').addEventListener('click',function(){
     const noakhaliMoney = getId('noakhaliDonate');
     const countMoney = getId('count');
     const text = document.getElementById('textN').innerText;
+    const footer = document.getElementById('footer');
     if(inputValue >=0 && inputValue !== isNaN(inputValue)){
     
     const tatalDonate = inputValue + noakhaliMoney;
@@ -18,6 +19,9 @@ document.getElementById('noakhaliAddBtn').addEventListener('click',function(){
         `
         document.getElementById('history').appendChild(div);
         div.classList.add('border',':rounded-xl','m-6','md:p-12');
+
+        // add popUp btn
+        footer.classList.remove('hidden')
     }
     else{
         alert('Invalid Donate Amount');
@@ -29,6 +33,7 @@ document.getElementById('feniDonateBtn').addEventListener('click',function(){
     const feniMoney = getId('feniMoney');
     const countMoney = getId('count');
     const text = document.getElementById('textF').innerText;
+    const footer = document.getElementById('footer');
     if(feniInputValue >=0 && feniInputValue !== isNaN(feniInputValue)){
         const feniTotalDonate = feniInputValue + feniMoney;
     const totalMoney = document.getElementById('feniMoney').innerText = feniTotalDonate;
@@ -42,6 +47,7 @@ document.getElementById('feniDonateBtn').addEventListener('click',function(){
     `;
     document.getElementById('history').appendChild(div);
     div.classList.add('border','rounded-xl','m-6','md:p-12');
+    footer.classList.remove('hidden')
     }
     else{
         alert('Invalid Donate Amount');
@@ -53,6 +59,7 @@ document.getElementById('addBtn').addEventListener('click',function(){
     const money = getId('money');
     const countMoney = getId('count');
     const text = document.getElementById('text').innerText;
+    const footer = document.getElementById('footer');
     if(inputValue >=0 && inputValue !== isNaN(inputValue)){
     const totalDonateMoney = inputValue + money;
     const totalMoney = document.getElementById('money').innerText = totalDonateMoney;
@@ -66,6 +73,7 @@ document.getElementById('addBtn').addEventListener('click',function(){
     `
     document.getElementById('history').appendChild(div);
     div.classList.add('border','rounded-xl','m-6','md:p-12');
+    footer.classList.remove('hidden')
     }
     else{
         alert('Invalid Donate Amount');
@@ -76,4 +84,11 @@ document.getElementById('addBtn').addEventListener('click',function(){
 
 document.getElementById('blog-btn').addEventListener('click',function(){
     window.location.href=`blog.html`;
+})
+
+// popUp remove 
+
+const popUp = document.getElementById('popUp-btn').addEventListener('click',function(){
+    const footer = document.getElementById('footer');
+    footer.classList.add('hidden');
 })
