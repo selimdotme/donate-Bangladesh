@@ -15,6 +15,7 @@ document.getElementById('noakhaliAddBtn').addEventListener('click',function(){
         const div = document.createElement('div');
         div.innerHTML=`
         <h1 className="text-xs md:text-xl font-bold text-emerald-700">${inputValue} Taka ${text}</h1>
+        <br>
         <p className = "text-xs md:text-xl font-bold text-emerald-700">${new Date()}</p>
         `
         document.getElementById('history').appendChild(div);
@@ -43,6 +44,7 @@ document.getElementById('feniDonateBtn').addEventListener('click',function(){
     const div = document.createElement('div');
     div.innerHTML=`
     <h1 className = "text-xs md:text-xl font-bold text-slate-950">${feniInputValue} Taka ${text}</h1>
+    <br>
     <p className = "text-xs md:text-xl font-bold text-slate-950">${new Date()}</p>
     `;
     document.getElementById('history').appendChild(div);
@@ -69,6 +71,7 @@ document.getElementById('addBtn').addEventListener('click',function(){
     const div = document.createElement('div');
     div.innerHTML=`
     <h1 className="text-xs md:text-xl font-bold text-yellow-800">${inputValue} Taka ${text}</h1>
+    <br>
     <p className="text-xs md:text-xl font-bold text-yellow-800">${new Date()}</p>
     `
     document.getElementById('history').appendChild(div);
